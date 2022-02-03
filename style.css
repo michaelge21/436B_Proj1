@@ -123,6 +123,34 @@ body {
 }
 
 
+.boxes3{
+    width: 30%;
+    height: 10%;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    position: relative;
+    margin: 1vw;
+    padding: .5vw;
+    background-color: rgba(210, 105, 30, 0.363);
+    border: 1px ridge darkcyan;
+    border-radius: 30%;
+    animation: rotatoOpposite 3s linear infinite;
+    animation-play-state:paused;
+    transition: 3s all;
+}
+
+.boxes3:hover {
+    animation-play-state:running;
+}
+
+@keyframes rotatoOpposite{
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 
 @media (max-width: 1600px) {}
 
