@@ -22,13 +22,12 @@ body {
     position: absolute;
     width: 100%;
     height: 10vw;
-    bottom: -10vw;
+    bottom: -20vw;
     background-color: rgba(0, 0, 0, 0.3);
     animation-duration: 2s;
     animation-name: loadBoxBottom;
     animation-iteration-count: 2;
     border-radius: 35% 35% 0% 0%;
-
     transition: 1s all;
 }
 
@@ -40,13 +39,10 @@ body {
 }
 
 @keyframes loadBoxBottom {
-    from {
-        margin-bottom: -5%;
-    }
 
     to {
-        background-color: rgba(0, 0, 0, 0.01);
-        margin-bottom: 10vw;
+        background-color: rgba(121, 120, 120, 0.01);
+        margin-bottom: 20vw;
     }
 }
 
@@ -59,7 +55,7 @@ body {
     border-style: solid;
     border-color: rgba(255, 0, 0, 0.29);
     position: relative;
-    right: -100%;
+    right: -50%;
     top: 60%;
     /* kinda just a dummy line. since this is relative, it's going from the top of "container". dictates whether this box comes from middle or lower of screen p much*/
     animation: rotato 3s linear infinite;
@@ -90,14 +86,14 @@ body {
 .boxes2 {
     width: 20%;
     height: 20%;
-    /* top: -50%;
-    right: 100%; */
+    bottom: 80%;
+    right: 80%;
     border-style: dotted;
     border-color: bisque;
-    background-color: rgba(59, 142, 214, 0.486);
+    background: rgba(59, 142, 214, 0.486);
     position: relative;
-    animation: rotatoOpposite 3s linear infinite;
-    animation-play-state:paused;
+    animation: rotato3D 3s linear infinite;
+    animation-play-state: paused;
     transition: 3s all;
 }
 
@@ -105,11 +101,28 @@ body {
     animation-play-state: running;
 }
 
-@keyframes rotatoOpposite{
+@keyframes rotato3D{
     to {
         transform: rotate3d(2, -1, -1, -1turn);
     }
 }
+
+#boxes21{
+    bottom:-20px;
+}
+#boxes22{
+    bottom:-10px;
+}
+
+#boxes23{
+    right: 40px;
+}
+
+#boxes25{
+    right:-20px;
+}
+
+
 
 @media (max-width: 1600px) {}
 
@@ -130,15 +143,10 @@ body {
 @media (max-width: 1400px) and (max-height: 1000px) {
     .boxes1 {
         transition: 3s all;
-        right: 20%;
         top: 10%;
     }
 
-    .boxes2 {
-        transition: 3s all;
-        top: 40%;
-        right: 60%;
-    }
+ 
 }
 
 @media (max-width: 1300px) {
@@ -149,7 +157,15 @@ body {
 
 @media (max-height: 950px) {}
 
-@media (max-width: 1200px) and (max-height: 900px) {}
+@media (max-width: 1200px) and (max-height: 900px) {
+    .boxes2 {
+        transition: 3s all;
+        bottom: 50%;
+        right: 40%;
+        /* top: 40%; */
+        /* right: 60%; */
+    }
+}
 
 @media (max-width: 1100px) {}
 
@@ -159,4 +175,20 @@ body {
 
 /* media query for 950 width and 750 height */
 
-@media (max-width: 900px) and (max-height: 700px) {}
+@media (max-width: 900px) and (max-height: 700px) {
+    .container{
+        animation-play-state: running;
+    }
+}
+
+@media (max-width: 800px) and (max-height: 600px) {
+    .container{ 
+        animation-duration: 50s;
+    }
+}
+
+@media (max-width: 600px) and (max-height: 400px) {
+    .container{
+        animation-duration: 10s;
+    }
+}
