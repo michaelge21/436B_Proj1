@@ -26,7 +26,7 @@ body {
     background-color: rgba(0, 0, 0, 0.3);
     animation-duration: 2s;
     animation-name: loadBoxBottom, rotato;
-    animation-iteration-count: 2,infinite;
+    animation-iteration-count: 2, infinite;
     border-radius: 35% 35% 0% 0%;
     transition: 1s all;
     animation-play-state: running, paused;
@@ -40,7 +40,7 @@ body {
 }
 
 
-.loadBoxBottom:hover{
+.loadBoxBottom:hover {
     animation-play-state: running, running;
 }
 
@@ -107,33 +107,34 @@ body {
     animation-play-state: running;
 }
 
-@keyframes rotato3D{
+@keyframes rotato3D {
     to {
         transform: rotate3d(2, -1, -1, -1turn);
     }
 }
 
-#boxes21{
-    bottom:-20px;
-}
-#boxes22{
-    bottom:-10px;
+#boxes21 {
+    bottom: -20px;
 }
 
-#boxes23{
+#boxes22 {
+    bottom: -10px;
+}
+
+#boxes23 {
     right: 40px;
 }
 
-#boxes25{
-    right:-20px;
+#boxes25 {
+    right: -20px;
 }
 
 
-.boxes3{
+.boxes3 {
     width: 30%;
     height: 10%;
     left: 0%;
-    right: 0%;
+    right: 10%;
     top: 0%;
     bottom: 0%;
     position: relative;
@@ -143,15 +144,15 @@ body {
     border: 1px ridge darkcyan;
     border-radius: 30%;
     animation: rotatoOpposite 3s linear infinite;
-    animation-play-state:paused;
+    animation-play-state: paused;
     transition: 3s all;
 }
 
 .boxes3:hover {
-    animation-play-state:running;
+    animation-play-state: running;
 }
 
-@keyframes rotatoOpposite{
+@keyframes rotatoOpposite {
     to {
         transform: rotate(360deg);
     }
@@ -181,7 +182,7 @@ body {
         right: 20%;
     }
 
- 
+
 }
 
 @media (max-width: 1300px) {
@@ -211,7 +212,7 @@ body {
 /* media query for 950 width and 750 height */
 
 @media (max-width: 900px) and (max-height: 700px) {
-    .container{
+    .container {
         animation-play-state: running;
         width: 80%;
         height: 80%;
@@ -219,13 +220,58 @@ body {
 }
 
 @media (max-width: 800px) and (max-height: 600px) {
-    .container{ 
+    .container {
         animation-duration: 50s;
+        width: 50%;
+        height: 50%;
+        background-color: rgba(245, 245, 245, 0.384);
     }
 }
 
 @media (max-width: 600px) and (max-height: 400px) {
-    .container{
+    .container {
         animation-duration: 10s;
+    }
+}
+
+@media (max-height: 400px) {
+
+    html, body {
+        height: 100%;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .boxes3 {
+        animation: bounce .5s infinite alternate, move 10s infinite alternate;
+
+    }
+
+    .container>.boxes3:nth-child(2) {
+        animation-delay: .02s;
+    }
+
+
+    @keyframes move{
+        from {
+            transform:translateX(-50rem);
+        }
+        to{ 
+            transform:translateX(20rem);
+        }
+    }
+
+    @keyframes bounce {
+        from {
+            transform: translate3d(0);
+        }
+
+        to {
+            transform: translate3d(0, -.1rem, 0);
+        }
     }
 }
