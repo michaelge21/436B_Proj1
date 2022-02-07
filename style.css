@@ -167,18 +167,44 @@ body {
     top: -95%;
 }
 
+
+
+/* making a breakpoint for phones */
+@media (max-width:450px) and (min-width:0px) {
+
+    .loadBoxBottom{
+        width: 0%;
+        height: 0%;
+        background-color: transparent;
+    }
+
+    .container {
+        animation-play-state: running;
+        width: 60%;
+        height: 60%;
+        animation-duration: 80s;
+    }
+
+    .container:hover{
+        animation-play-state: paused; 
+    }
+}
+
+
+/* making a breakpoint for tablets */
+@media (max-width:768px) and (min-width:450px) {
+    .boxes1{
+        animation-play-state: running;
+    }
+}
+
+/* can i just do the rest of these as accounting for laptop and desktop? */
+
 @media (max-width: 1600px) {}
 
 @media (max-width: 1500px) {}
 
 @media (max-width: 1400px) {
-
-
-    /*   .container {
-      background: linear-gradient(217deg, #514B4D, rgba(255,0,0,0) 70.71%),
-              linear-gradient(127deg, #F0A856, rgba(0,255,0,0) 70.71%),
-              linear-gradient(336deg, #484443, rgba(0,0,255,0) 70.71%);
-    } */
 }
 
 @media (max-height: 1100px) {}
@@ -280,8 +306,8 @@ body {
     }
 
     .boxes3 {
-        animation: bounce .5s infinite alternate, move 10s infinite alternate;
-
+        animation: move 10s infinite alternate, bounce .5s infinite alternate;
+/* this line isn't letting me edit 2 animations */
     }
 
     .container>.boxes3:nth-child(2) {
@@ -310,23 +336,3 @@ body {
 }
 
 
-/* making a breakpoint for phones */
-@media (max-width:450px) and (min-width:0px) {
-
-    .loadBoxBottom{
-        width: 0%;
-        height: 0%;
-        background-color: transparent;
-    }
-
-    .container {
-        animation-play-state: running;
-        width: 60%;
-        height: 60%;
-        animation-duration: 80s;
-    }
-
-    .container:hover{
-        animation-play-state: paused; 
-    }
-}
