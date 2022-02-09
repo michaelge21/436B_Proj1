@@ -4,14 +4,29 @@
     height: 100%;
     top: 0;
     left: 0;
-    background: linear-gradient(#c1cdf754, rgba(255, 255, 255, 0.62));
+    background: linear-gradient(#ffffff, rgb(255, 255, 255));
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 1s all;
-    animation: rotato 30s linear infinite;
+    animation: rotato 100s linear infinite;
     animation-play-state: paused;
     transition: 3s all;
+}
+
+.behindGear {
+    width:50%;
+    height: 50%;
+    position: absolute;
+    background: rgb(172, 85, 85);
+    animation: rotatoOpposite 50s linear infinite;
+    animation-play-state: running;
+    transition: 10s all;
+}
+
+.behindGear:hover {
+    animation-play-state: paused;
+    transform: rotateY(270deg);
 }
 
 body {
@@ -70,11 +85,7 @@ body {
     /*  animation code kindly sourced from stackoverflow  */
 }
 
-@keyframes rotato {
-    to {
-        transform: rotate(360deg);
-    }
-}
+
 
 .subboxes1 {
     width: 100%;
@@ -94,7 +105,7 @@ body {
     height: 10%;
     background: rgba(0, 0, 0, 0.31);
     border-style: solid;
-    border-color: rgba(255, 0, 0, 0.29);
+    border-color: rgba(0, 255, 136, 0.144);
     position: relative;
     right: -50%;
     top: 5%;
@@ -116,29 +127,16 @@ body {
 }
 
 
-#boxes23 {
-    right: 40px;
-    width: 40%;
-    height: 20%;
-    top: auto;
-}
-
-#boxes25 {
-    right: -20px;
-    width: 20%;
-    height: 20%;
-}
-
-
+/* the rotato rotato box */
 .boxes3 {
     width: 10%;
     height: 10%;
-    background: rgba(0, 0, 0, 0.31);
+    background: rgba(255, 255, 255, 0.31);
     border-style: solid;
     border-color: rgba(38, 192, 141, 0.29);
     position: absolute;
-    right: -50%;
-    top: 20%;
+    right: 20%;
+    top: 30%;
     /* kinda just a dummy line. since this is relative, it's going from the top of "container". dictates whether this box comes from middle or lower of screen p much*/
     animation: rotatoOpposite 1s linear infinite;
     animation-play-state: running;
@@ -146,18 +144,57 @@ body {
 }
 
 .boxes3:hover {
-    /* right: 50%; */
-    /* animation-play-state: paused; */
-    transform: translateX(-20rem);
+    animation-play-state: paused;
+    transform: rotateX(270deg);
 }
 
+.boxes5 {
+    width: 10%;
+    height: 10%;
+    background: rgba(150, 24, 223, 0.31);
+    border-style: solid;
+    border-color: rgba(121, 150, 140, 0.29);
+    position: absolute;
+    right: 30%;
+    top: 30%;
+    /* kinda just a dummy line. since this is relative, it's going from the top of "container". dictates whether this box comes from middle or lower of screen p much*/
+    animation: rotato 1s linear infinite;
+    animation-play-state: running;
+    transition: 10s all;
+}
+
+.boxes5:hover {
+    animation-play-state: paused;
+    transform: rotateX(270deg);
+}
+
+.spoke {
+    width: 5%;
+    height: 5%;
+    background: rgba(0, 0, 0, 0.31);
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.29);
+    position: absolute;
+    right: 40%;
+    top: 30%;
+    /* kinda just a dummy line. since this is relative, it's going from the top of "container". dictates whether this box comes from middle or lower of screen p much*/
+    animation: rotatoOpposite .7s linear infinite;
+    animation-play-state: running;
+    transition: 10s all;
+}
+
+.spoke:hover {
+    animation-play-state: paused;
+    transform:rotateY(350deg);
+}
 
 @keyframes rotatoOpposite {
     to {
-        transform: rotate(360deg);
+        transform: rotate(-360deg);
     }
 }
 
+/* the perspective box */
 .boxes4 {
     width: 100%;
     height: 100%;
@@ -168,6 +205,13 @@ body {
     transition: 2s all;
     animation: wiggle 1.5s linear infinite;
 }
+
+@keyframes rotato {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 
 @keyframes wiggle {
     0% {
@@ -193,7 +237,7 @@ body {
 
 .boxes4:hover {
     animation-play-state: paused;
-    
+    top: -100%;
 }
 
 
@@ -228,7 +272,9 @@ body {
 
 /* can i just do the rest of these as accounting for laptop and desktop? */
 
-@media (max-width: 1600px) {}
+@media (max-width: 1600px) {
+    .boxes2 {}
+}
 
 @media (max-width: 1500px) {}
 
@@ -240,7 +286,7 @@ body {
     .boxes1 {
         transition: 3s all;
         top: 10%;
-        right: 20%;
+        right: -30%;
     }
 
 
