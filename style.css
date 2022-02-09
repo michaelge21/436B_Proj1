@@ -4,12 +4,12 @@
     height: 100%;
     top: 0;
     left: 0;
-    background: linear-gradient(#a1b3f354, rgba(255, 255, 255, 0.62));
+    background: linear-gradient(#c1cdf754, rgba(255, 255, 255, 0.62));
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 1s all;
-    animation: rotato 100s linear infinite;
+    animation: rotato 30s linear infinite;
     animation-play-state: paused;
     transition: 3s all;
 }
@@ -65,7 +65,7 @@ body {
     top: 60%;
     /* kinda just a dummy line. since this is relative, it's going from the top of "container". dictates whether this box comes from middle or lower of screen p much*/
     animation: rotato 3s linear infinite;
-    animation-play-state: paused;
+    animation-play-state: running;
     transition: 3s all;
     /*  animation code kindly sourced from stackoverflow  */
 }
@@ -85,26 +85,28 @@ body {
 }
 
 .boxes1:hover {
-    animation-play-state: running;
+    animation-play-state: paused;
 }
 
 
 .boxes2 {
-    width: 30%;
-    height: 30%;
-    bottom: 80%;
-    right: 80%;
-    border-style: dotted;
-    border-color: bisque;
-    background: rgba(59, 142, 214, 0.486);
-    position: relative;
-    animation: rotato3D 3s linear infinite;
-    animation-play-state: paused;
-    transition: 3s all;
-}
+    width: 10%;
+      height: 10%;
+      background: rgba(0, 0, 0, 0.31);
+      border-style: solid;
+      border-color: rgba(255, 0, 0, 0.29);
+      position: relative;
+      right: -50%;
+      top: 5%;
+      /* kinda just a dummy line. since this is relative, it's going from the top of "container". dictates whether this box comes from middle or lower of screen p much*/
+      animation: rotato 1s linear infinite;
+      animation-delay: .9s;
+      animation-play-state: running;
+      transition: 3s all;
+  }
 
 .boxes2:hover {
-    animation-play-state: running;
+    animation-play-state: paused;
 }
 
 @keyframes rotato3D {
@@ -113,20 +115,18 @@ body {
     }
 }
 
-#boxes21 {
-    bottom: -20px;
-}
-
-#boxes22 {
-    bottom: -10px;
-}
 
 #boxes23 {
     right: 40px;
+    width: 40%;
+    height: 20%;
+    top: auto;
 }
 
 #boxes25 {
     right: -20px;
+    width: 20%;
+    height: 20%;
 }
 
 
@@ -165,8 +165,22 @@ body {
     background-color: pink;
     right: -95%;
     top: -95%;
+    transition: 2s all;
+    animation: wiggle 1.5s linear infinite;
 }
 
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    80% { transform: rotate(0deg); }
+    85% { transform: rotate(2deg); }
+    95% { transform: rotate(-2deg); }
+   100% { transform: rotate(0deg); }
+}
+
+.boxes4:hover{
+    animation-play-state: paused;
+    top: -100%;
+}
 
 
 /* making a breakpoint for phones */
@@ -237,19 +251,6 @@ body {
     }
 }
 
-@media (max-width: 1100px) {
-    .boxes4{
-        animation: wiggle 1s linear infinite;
-    }
-
-    @keyframes wiggle {
-        0% { transform: rotate(0deg); }
-        80% { transform: rotate(0deg); }
-        85% { transform: rotate(2deg); }
-        95% { transform: rotate(-2deg); }
-       100% { transform: rotate(0deg); }
-    }
-}
 
 @media (max-height: 850px) {}
 
@@ -271,7 +272,7 @@ body {
 
 @media (max-width: 800px) and (max-height: 600px) {
     .container {
-        animation-duration: 50s;
+        /* animation-duration: 45s; */
         width: 50%;
         height: 50%;
         background-color: rgba(245, 245, 245, 0.384);
@@ -280,7 +281,7 @@ body {
 
 @media (max-width: 600px) and (max-height: 400px) {
     .container {
-        animation-duration: 10s;
+        /* animation-duration: 30s; */
         width: 20%;
         height: 20%;
     }
