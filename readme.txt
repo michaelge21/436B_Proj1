@@ -8,3 +8,4 @@ figure out AND media query breakpoints for the perspective-creating motions
 
 add more cogs
 - performance? you may want to make the back gear six cogs and just overlap them...
+
