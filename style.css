@@ -91,19 +91,19 @@ body {
 
 .boxes2 {
     width: 10%;
-      height: 10%;
-      background: rgba(0, 0, 0, 0.31);
-      border-style: solid;
-      border-color: rgba(255, 0, 0, 0.29);
-      position: relative;
-      right: -50%;
-      top: 5%;
-      /* kinda just a dummy line. since this is relative, it's going from the top of "container". dictates whether this box comes from middle or lower of screen p much*/
-      animation: rotato 1s linear infinite;
-      animation-delay: .9s;
-      animation-play-state: running;
-      transition: 3s all;
-  }
+    height: 10%;
+    background: rgba(0, 0, 0, 0.31);
+    border-style: solid;
+    border-color: rgba(255, 0, 0, 0.29);
+    position: relative;
+    right: -50%;
+    top: 5%;
+    /* kinda just a dummy line. since this is relative, it's going from the top of "container". dictates whether this box comes from middle or lower of screen p much*/
+    animation: rotato 1s linear infinite;
+    animation-delay: .9s;
+    animation-play-state: running;
+    transition: 3s all;
+}
 
 .boxes2:hover {
     animation-play-state: paused;
@@ -131,26 +131,26 @@ body {
 
 
 .boxes3 {
-    width: 30%;
+    width: 10%;
     height: 10%;
-    left: 0%;
-    right: 10%;
-    top: 0%;
-    bottom: 0%;
-    position: relative;
-    margin: 1vw;
-    padding: .5vw;
-    background-color: rgba(210, 105, 30, 0.363);
-    border: 1px ridge darkcyan;
-    border-radius: 30%;
-    animation: rotatoOpposite 3s linear infinite;
-    animation-play-state: paused;
-    transition: 3s all;
+    background: rgba(0, 0, 0, 0.31);
+    border-style: solid;
+    border-color: rgba(38, 192, 141, 0.29);
+    position: absolute;
+    right: -50%;
+    top: 20%;
+    /* kinda just a dummy line. since this is relative, it's going from the top of "container". dictates whether this box comes from middle or lower of screen p much*/
+    animation: rotatoOpposite 1s linear infinite;
+    animation-play-state: running;
+    transition: 10s all;
 }
 
 .boxes3:hover {
-    animation-play-state: running;
+    /* right: 50%; */
+    /* animation-play-state: paused; */
+    transform: translateX(-20rem);
 }
+
 
 @keyframes rotatoOpposite {
     to {
@@ -158,7 +158,7 @@ body {
     }
 }
 
-.boxes4{
+.boxes4 {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -170,23 +170,37 @@ body {
 }
 
 @keyframes wiggle {
-    0% { transform: rotate(0deg); }
-    80% { transform: rotate(0deg); }
-    85% { transform: rotate(2deg); }
-    95% { transform: rotate(-2deg); }
-   100% { transform: rotate(0deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    80% {
+        transform: rotate(0deg);
+    }
+
+    85% {
+        transform: rotate(2deg);
+    }
+
+    95% {
+        transform: rotate(-2deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
-.boxes4:hover{
+.boxes4:hover {
     animation-play-state: paused;
-    top: -100%;
+    
 }
 
 
 /* making a breakpoint for phones */
 @media (max-width:450px) and (min-width:0px) {
 
-    .loadBoxBottom{
+    .loadBoxBottom {
         width: 0%;
         height: 0%;
         background-color: transparent;
@@ -199,15 +213,15 @@ body {
         animation-duration: 80s;
     }
 
-    .container:hover{
-        animation-play-state: paused; 
+    .container:hover {
+        animation-play-state: paused;
     }
 }
 
 
 /* making a breakpoint for tablets */
 @media (max-width:768px) and (min-width:450px) {
-    .boxes1{
+    .boxes1 {
         animation-play-state: running;
     }
 }
@@ -218,8 +232,7 @@ body {
 
 @media (max-width: 1500px) {}
 
-@media (max-width: 1400px) {
-}
+@media (max-width: 1400px) {}
 
 @media (max-height: 1100px) {}
 
@@ -265,7 +278,7 @@ body {
         height: 80%;
     }
 
-    .boxes4{
+    .boxes4 {
         animation-play-state: paused;
     }
 }
@@ -286,7 +299,7 @@ body {
         height: 20%;
     }
 
-    .boxes4{
+    .boxes4 {
         width: 70%;
         height: 70%;
         right: -65%;
@@ -308,7 +321,7 @@ body {
 
     .boxes3 {
         animation: move 10s infinite alternate, bounce .5s infinite alternate;
-/* this line isn't letting me edit 2 animations */
+        /* this line isn't letting me edit 2 animations */
     }
 
     .container>.boxes3:nth-child(2) {
@@ -316,12 +329,13 @@ body {
     }
 
 
-    @keyframes move{
+    @keyframes move {
         from {
-            transform:translateX(-50rem);
+            transform: translateX(-50rem);
         }
-        to{ 
-            transform:translateX(20rem);
+
+        to {
+            transform: translateX(20rem);
         }
     }
 
@@ -335,5 +349,3 @@ body {
         }
     }
 }
-
-
