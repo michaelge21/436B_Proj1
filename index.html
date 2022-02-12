@@ -128,8 +128,15 @@
     <div class="boxes4"></div>
 
   </div>
+  
   <button class="reload" onClick="history.go(0);">reload</button>
-  <button class="tutorial" onClick="">wtf do i do</button>
+  <button class="tutorial" onClick="presentLoader();">wtf do i do</button>
+
+
+  <div class="loadingScreen" id="loadingScreen">
+    <div class="resizeWaiter"><h3>idk what i'm doing</h3><h1>resize the damn window</h1></div>
+    <button class="removeLoading" onClick="removeLoader();">ik what i'm doing</button>
+  </div>
 
 </body>
 
