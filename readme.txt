@@ -1,8 +1,10 @@
 TODOS:
 
 HOW TO PRIME USER TO DRAG FOR WIDTH AS WELL
+- make a load screen with a resizable element that they can play around with
 
-fix the damned back gear
+start the user small?
+
 
 what order for the cogs? if we want rotation from the middle, have spoke come in last
 - if we want rotation from outside, have the big green boi... do something?
@@ -14,6 +16,8 @@ add more cogs
 
 loading screen depicting the spinning + hover mechanic?
 
-add a reload button??
+DONE: add a reload button??
 
 DONE: figure out whether or not you want cogs to fly in from the width or height adjustment
+
+DONE: fix the damned back gear
