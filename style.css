@@ -16,22 +16,35 @@
     position: absolute;
     top:0; bottom: 0; left: 0; right: 0;
     margin: auto;
-    width: 100px;
-    height: 100px;
+    width: 40px;
+    height: 70px;
     background-color:rgba(22, 223, 189, 0.29);
     border-style: ridge;
     border: 3px ridge grey;
     display: block;
-    overflow:auto;
+    overflow:hidden;
     resize: both;
 }
 
 h1 {
     position: fixed;
-    bottom: 1vw;
-    right: .3vw;
+    font-size:xx-large;
+    font-family: 'Barlow', sans-serif;
+    bottom: 15vw;
+    right: 15vw;
     margin: auto;
     color: rgb(255, 255, 255);
+    animation: rotatoOpposite 3.5s linear infinite;
+    animation-play-state: running;
+}
+
+h1:hover{
+ animation-play-state: paused;
+}
+
+h2{
+    font-family: 'Barlow', sans-serif;
+    margin: auto;
 }
 
 h3{
@@ -61,8 +74,13 @@ h3{
 button{
     margin-left: .1vw;
     font-family: 'Barlow', sans-serif;
-
 }
+
+.removeLoading{
+    z-index: 1001;
+}
+
+
 .reload {
     background: transparent;
     border: 2px solid  #729ba871;
@@ -88,15 +106,17 @@ button:hover{
     border: 1px ridge white;
 }
 
-.behindGear {
+/* .behindGear {
     width:50%;
     height: 50%;
     position: absolute;
+    bottom:0%;
+    right: 0%;
     background: rgba(207, 45, 45, 0.603);
     animation: rotatoOpposite 30s linear infinite;
     animation-play-state: running;
     transition: 10s all;
-}
+} */
 
 /* might need to just manually create these gears */
 
@@ -414,7 +434,7 @@ body {
 
 @media (max-height:570px) and (max-width:1200px) {
     .container{
-        transform: rotate(2.5deg);
+        transform: rotate(4.0deg);
     }
 }
 
@@ -424,6 +444,10 @@ body {
         animation-play-state: running;
         width: 80%;
         height: 80%
+    }
+
+    .boxes4{
+        animation-play-state: paused;
     }
 
     .boxes3{
@@ -438,27 +462,7 @@ body {
 
 
 
-
-
-@media (max-width: 1200px) and (max-height: 850px) {
-    /* moving the final cog into place */
-}
-
-/* media query for 950 width and 750 height */
-
-@media (max-width: 900px) and (max-height: 700px) {
-    .container {
-        animation-play-state: running;
-        width: 80%;
-        height: 80%;
-    }
-
-    .boxes4 {
-        animation-play-state: paused;
-    }
-}
-
-@media (max-width: 800px) and (max-height: 600px) {
+@media (max-width: 570px) and (max-height: 800px) {
     .container {
         /* animation-duration: 45s; */
         width: 50%;
@@ -466,8 +470,8 @@ body {
         background-color: rgba(245, 245, 245, 0.384);
     }
 }
-
-@media (max-width: 600px) and (max-height: 400px) {
+/* 
+@media (max-width: 570px) and (max-height: 600px) {
     .container {
         /* animation-duration: 30s; */
         width: 20%;
@@ -480,7 +484,7 @@ body {
         right: -65%;
         top: -65%;
     }
-}
+} */
 
 /* @media (max-height: 400px) {
 
