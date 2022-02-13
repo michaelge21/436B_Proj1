@@ -494,8 +494,8 @@ body {
 /* HAVE THIS BE IMPORTANT ZOOM IN ONE */
 @media(max-width:760px) and (min-width:700px) and (max-height:850px){
     .boxes1{
-        width:150%;
-        height: 150%;
+        width:160%;
+        height: 160%;
     }
     .boxes1:hover{
         animation-play-state: paused;
@@ -505,8 +505,8 @@ body {
 @media(max-width:760px) and (min-width:700px) and (max-height:830px){
 
     .boxes2{
-        width:145%;
-        height: 145%;
+        width:155%;
+        height: 155%;
     }
     .boxes2:hover{
         animation-play-state: paused;
@@ -516,8 +516,8 @@ body {
 @media(max-width:760px) and (min-width:700px) and (max-height:810px){
 
     .boxes3{
-        width:140%;
-        height: 140%;
+        width:150%;
+        height: 150%;
     }
     .boxes3:hover{
         animation-play-state: paused;
@@ -527,8 +527,8 @@ body {
 @media(max-width:760px) and (min-width:700px) and (max-height:790px){
 
     .boxes4{
-        width:135%;
-        height: 135%;
+        width:145%;
+        height: 145%;
     }
     .boxes4:hover{
         animation-play-state: paused;
@@ -538,8 +538,8 @@ body {
 
 @media(max-width:760px) and (min-width:700px) and (max-height:770px){
     .boxes5{
-        width:130%;
-        height: 130%;
+        width:140%;
+        height: 140%;
     }
     .boxes5:hover{
         animation-play-state: paused;
@@ -548,8 +548,8 @@ body {
 
 @media(max-width:760px) and (min-width:700px) and (max-height:750px){
     .boxes6{
-        width:130%;
-        height: 130%;
+        width:140%;
+        height: 140%;
     }
     .boxes6:hover{
         animation-play-state: paused;
@@ -557,8 +557,8 @@ body {
 }
 @media(max-width:760px) and (min-width:700px) and (max-height:730px){
     .boxes7{
-        width:125%;
-        height: 125%;
+        width:140%;
+        height: 140%;
     }
 
     .boxes7:hover{
