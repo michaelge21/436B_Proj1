@@ -18,9 +18,9 @@
     position: absolute;
     top:0; bottom: 0; left: 0; right: 0;
     margin: auto;
-    width: 80px;
-    height: 100px;
-    background-color:rgba(22, 223, 189, 0.29);
+    width: 100px;
+    height: 120px;
+    background:linear-gradient(135deg, rgba(22, 223, 189, 0.29) 0%, rgba(22, 223, 190, 0.158) 92%,#fff 92%);
     border-style: ridge;
     border: 3px ridge grey;
     display: block;
@@ -68,7 +68,6 @@ h3{
     position: absolute;
     width: 100%;
     height: 100%;
-
     border-style: solid;
     border-color: black;
     background: linear-gradient(#ffffff, rgb(255, 255, 255));
@@ -76,9 +75,7 @@ h3{
     justify-content: center;
     align-items: center;
     transition: 1s all;
-    animation: rotato 100s linear infinite;
     transform:rotate(.8deg);
-    animation-play-state: paused;
     transition: 3s all;
 }
 
@@ -733,34 +730,7 @@ body {
         box-shadow: 0 0 0 0 rgba(85, 79, 79, 0);
     }
 }
-/* @media (max-height:570px) and (max-width: 1500px) {
-    .container{
-        transform: rotate(2.5deg);
-    }
-}
 
-@media (max-height:570px) and (max-width:1400px) {
-    .container{
-        transform: rotate(4deg);
-    }
-}
-
-
-@media (max-height:570px) and (max-width:1200px) {
-    .container{
-        transform: rotate(4.0deg);
-    }
-}
-
-
-@media (max-height: 540px) and (max-width: 1000px) {
-    .container{
-        animation-play-state: running;
-        margin: auto;
-        width: 80%;
-        height: 80%
-    }
-} */
 
 @keyframes rotatoOpposite {
     to {
