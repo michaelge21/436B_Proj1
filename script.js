@@ -7,7 +7,7 @@ function presentLoader() {
 }
 
 function reload(){
-    history.go(0);
+    // history.go(0);
 
     window.resizeTo(500,810);
 }
