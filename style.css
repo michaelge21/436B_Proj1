@@ -656,7 +656,7 @@ body {
 
 @media(max-width:699px){
     .boxes1{
-        width:1%;
+        width:.5%;
         /* animation: pulse 2s 4; */
         transition: .5s all;
     }
@@ -668,7 +668,7 @@ body {
 
 @media(max-width:689px){
     .boxes2{
-        width:1%;
+        width:.5%;
         /* animation: pulse 1.8s 4; */
         transition: .5s all;
     }
@@ -680,7 +680,7 @@ body {
 
 @media(max-width:679px){
     .boxes3{
-        width:1%;
+        width:.5%;
         /* animation: pulse 1.6s 4; */
         transition: .5s all;
     }
@@ -692,7 +692,7 @@ body {
 
 @media(max-width:669px){
     .boxes4{
-        width:1%;
+        width:.5%;
         /* animation: pulse 1.4s 4; */
         transition: .5s all;
     }
@@ -704,7 +704,7 @@ body {
 
 @media(max-width:659px){
     .boxes5{
-        width:1%;
+        width:.5%;
         /* animation: pulse 1.2s 4; */
         transition: .5s all;
     }
@@ -715,7 +715,7 @@ body {
 
 @media(max-width:649px){
     .boxes6{
-        width:1%;
+        width:.5%;
         /* animation: pulse 1.0s 4; */
         transition: .5s all;
     }
@@ -726,7 +726,7 @@ body {
 
 @media(max-width:639px){
     .boxes7{
-        width:1%;
+        width:.5%;
         /* animation: pulse .8s 4; */
         transition: .5s all;
     }
@@ -742,19 +742,35 @@ body {
         width:100%;
         border-radius: 50%;
     }
+
+}
+
+@media(min-width: 0px) and (max-width:640px) and (max-height:590px){
     .boxes2{
         width:95%;
-
         border-radius: 50%;
     }
+}
+
+@media(min-width: 0px) and (max-width:640px) and (max-height:580px){
     .boxes3{
         width:90%;
         border-radius: 50%;
     }
+
+}
+
+@media(min-width: 0px) and (max-width:640px) and (max-height:570px){
+
     .boxes4{
         width:85%;
         border-radius: 50%;
     }
+
+    }
+
+@media(min-width: 0px) and (max-width:640px) and (max-height:560px){
+
     .boxes5{
         width:80%;
 
@@ -764,6 +780,29 @@ body {
         width:75%;
         border-radius: 50%;
     }
+    .boxes7{
+        width:70%;
+        border-radius: 50%;
+    }
+}
+
+@media(min-width: 0px) and (max-width:640px) and (max-height:560px){
+
+    .boxes5{
+        width:80%;
+        border-radius: 50%;
+    }
+}
+@media(min-width: 0px) and (max-width:640px) and (max-height:550px){
+
+    .boxes6{
+        width:75%;
+        border-radius: 50%;
+    }
+
+}
+
+@media(min-width: 0px) and (max-width:640px) and (max-height:540px){
     .boxes7{
         width:70%;
         border-radius: 50%;
