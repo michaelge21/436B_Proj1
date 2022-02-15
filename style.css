@@ -135,7 +135,7 @@ body {
     /* kinda just a dummy line. since this is relative, it's going from the top of "container". dictates whether this box comes from middle or lower of screen p much*/
     animation: rotatoOpposite 3s linear infinite;
     animation-play-state: running;
-    transition: 3s all;
+    transition: 4s all;
 }
 
 .boxes1:hover {
@@ -159,7 +159,7 @@ body {
     border-color: #4c00827e;
     animation: rotato 1.2s linear infinite;
     animation-play-state: running;
-    transition: 5s all;
+    transition: 3.5s all;
     
 }
 
@@ -183,7 +183,7 @@ body {
     /* kinda just a dummy line. since this is relative, it's going from the top of "container". dictates whether this box comes from middle or lower of screen p much*/
     animation: rotatoOpposite 1s linear infinite;
     animation-play-state: running;
-    transition: 5s all;
+    transition: 3s all;
 }
 
 .boxes3:hover {
@@ -206,7 +206,7 @@ body {
     /* kinda just a dummy line. since this is relative, it's going from the top of "container". dictates whether this box comes from middle or lower of screen p much*/
     animation: rotato .3s linear infinite;
     animation-play-state: running;
-    transition: 5s all;
+    transition: 2.5s all;
 }
 
 .boxes4:hover{
@@ -226,7 +226,7 @@ body {
     border-style: solid;
     border-color: #ffff0080;
     animation: rotatoOpposite .3s linear infinite;
-    transition: 5s all;
+    transition: 2s all;
 }
 
 .boxes5:hover{
@@ -246,7 +246,7 @@ body {
     border-style: solid;
     border-color: #ff800098;
     animation: rotato .3s linear infinite;
-    transition: 5s all;
+    transition: 2s all;
 }
 
 .boxes6:hover{
@@ -266,7 +266,7 @@ body {
     border-style: solid;
     border-color: #ff0000a1;
     animation: rotatoOpposite .3s linear infinite;
-    transition: 5s all;
+    transition: 2s all;
 }
 
 .boxes7:hover{
@@ -378,6 +378,54 @@ body {
 
 /* can i just do the rest of these as accounting for laptop and desktop? */
 
+
+@media(min-height:700px){
+    .boxes{
+        border-radius: 0 90% 0 90%;
+    }
+}
+
+@media(min-height:650px){
+    .boxes{
+        border-radius: 90% 0 90% 0;
+    }
+}
+
+@media(min-height:600px){
+    .boxes{
+        border-radius: 90% 90% 90% 90%;
+    }
+}
+
+@media(min-height:580px){
+    .boxes{
+        border-radius: 80% 80% 80% 80%;
+    }
+}
+
+@media(min-height:560px){
+    .boxes{
+        border-radius: 70% 70% 70% 70%;
+    }
+}
+
+@media(min-height:540px){
+    .boxes{
+        border-radius: 60% 60% 60% 60%;
+    }
+}
+
+@media(min-height:520px){
+    .boxes{
+        border-radius: 50% 50% 50% 50%;
+    }
+}
+
+@media(min-height:500px){
+    .boxes{
+        border-radius: 40% 40% 40% 40%;
+    }
+}
 
 @media (max-width: 1200px){
     .boxes6{
@@ -605,10 +653,12 @@ body {
 }
 /* HAVE THIS BE IMPORTANT ZOOM IN ONE */
 
+
 @media(max-width:699px){
     .boxes1{
-        width:max-content;
+        width:1%;
         /* animation: pulse 2s 4; */
+        transition: .5s all;
     }
 
     .boxes1:hover{
@@ -618,8 +668,9 @@ body {
 
 @media(max-width:689px){
     .boxes2{
-        width:max-content;
+        width:1%;
         /* animation: pulse 1.8s 4; */
+        transition: .5s all;
     }
 
     .boxes2:hover{
@@ -629,8 +680,9 @@ body {
 
 @media(max-width:679px){
     .boxes3{
-        width:max-content;
+        width:1%;
         /* animation: pulse 1.6s 4; */
+        transition: .5s all;
     }
 
     .boxes3:hover{
@@ -640,8 +692,9 @@ body {
 
 @media(max-width:669px){
     .boxes4{
-        width:max-content;
+        width:1%;
         /* animation: pulse 1.4s 4; */
+        transition: .5s all;
     }
 
     .boxes4:hover{
@@ -651,8 +704,9 @@ body {
 
 @media(max-width:659px){
     .boxes5{
-        width:max-content;
+        width:1%;
         /* animation: pulse 1.2s 4; */
+        transition: .5s all;
     }
     .boxes5:hover{
         animation-play-state: running;
@@ -661,8 +715,9 @@ body {
 
 @media(max-width:649px){
     .boxes6{
-        width:max-content;
+        width:1%;
         /* animation: pulse 1.0s 4; */
+        transition: .5s all;
     }
     .boxes6:hover{
         animation-play-state: running;
@@ -671,8 +726,9 @@ body {
 
 @media(max-width:639px){
     .boxes7{
-        width:max-content;
+        width:1%;
         /* animation: pulse .8s 4; */
+        transition: .5s all;
     }
     .boxes7:hover{
         animation-play-state: running;
@@ -683,33 +739,33 @@ body {
 /* SNAPS TOO MUCH? */
 @media(min-width: 0px) and (max-width:640px) and (max-height:600px){
     .boxes1{
-        width:auto;
+        width:100%;
         border-radius: 50%;
     }
     .boxes2{
-        width:auto;
+        width:95%;
 
         border-radius: 50%;
     }
     .boxes3{
-        width:auto;
+        width:90%;
         border-radius: 50%;
     }
     .boxes4{
-        width:auto;
+        width:85%;
         border-radius: 50%;
     }
     .boxes5{
-        width:auto;
+        width:80%;
 
         border-radius: 50%;
     }
     .boxes6{
-        width:auto;
+        width:75%;
         border-radius: 50%;
     }
     .boxes7{
-        width:auto;
+        width:70%;
         border-radius: 50%;
     }
 }
