@@ -76,7 +76,8 @@ h3{
     justify-content: center;
     align-items: center;
     transition: 1s all;
-    /* transform:rotate(.8deg); */
+    animation: rotato 4.5s ease infinite;
+    animation-play-state: paused;
     transition: 3s all;
 }
 
@@ -410,9 +411,17 @@ body {
 
 
 /* making a breakpoint for phones */
-@media (max-width:450px) and (min-width:0px) {
+@media (max-width:300px) and (min-width:0px)  and (min-height:0px) and (max-height: 500px){
 
-
+    .container {
+        width: 60%;
+        height: 60%;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        animation-play-state: running;
+    }
 }
 
 
