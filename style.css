@@ -196,6 +196,7 @@ body {
 
 .boxes1:hover {
     /* background:rgb(255, 0, 234); */
+    background: #9400d342;
     animation-play-state: paused;
     /* transform: rotateX(270deg); */
 }
@@ -221,6 +222,7 @@ body {
 
 .boxes2:hover{
     animation-play-state: paused;
+    background: #4c00827e;
 }
 
 
@@ -244,7 +246,7 @@ body {
 
 .boxes3:hover {
     animation-play-state: paused;
-    transform: rotateX(270deg);
+    background: #0000ff88;
 }
 
 .boxes4 {
@@ -267,6 +269,7 @@ body {
 
 .boxes4:hover{
     animation-play-state: paused;
+    background: #00ff007a;
 }
 
 .boxes5{
@@ -287,6 +290,7 @@ body {
 
 .boxes5:hover{
     animation-play-state: paused;
+    background: #ffff0080;
 }
 
 .boxes6{
@@ -307,6 +311,7 @@ body {
 
 .boxes6:hover{
     animation-play-state: paused;
+    background: #ff800098;
 }
 
 .boxes7{
@@ -327,6 +332,7 @@ body {
 
 .boxes7:hover{
     animation-play-state: paused;
+    background: #ff0000a1;
 }
 
 
@@ -406,22 +412,7 @@ body {
 /* making a breakpoint for phones */
 @media (max-width:450px) and (min-width:0px) {
 
-    .loadBoxBottom {
-        width: 0%;
-        height: 0%;
-        background-color: transparent;
-    }
 
-    .container {
-        animation-play-state: running;
-        width: 60%;
-        height: 60%;
-        animation-duration: 80s;
-    }
-
-    .container:hover {
-        animation-play-state: paused;
-    }
 }
 
 
