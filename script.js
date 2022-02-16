@@ -11,5 +11,5 @@ function presentLoader() {
 function reload(){
     history.go(0);
 
-    myWindow.resizeTo(500,810);
+    myWindow.resizeTo(500,850);
 }
